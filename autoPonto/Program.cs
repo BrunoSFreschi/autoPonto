@@ -16,7 +16,7 @@ Thread.Sleep(5000);
 
 foreach (var contact in contacts)
 {
-    var search = driver.FindElementByClassName("_13NKt"); // Usa a classe da mensagem que esta na caixa de pesquisa.
+    var search = driver.FindElementByClassName("_13NKt"); //Usa a classe da mensagem que esta na caixa de pesquisa.
     search.SendKeys(contact);
 
     search = driver.FindElementByXPath($"//spam[@title='{contact}']");
