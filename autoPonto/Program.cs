@@ -12,7 +12,7 @@ ChromeDriver driver = new ChromeDriver();
 driver.Navigate().GoToUrl(url);
 driver.Manage().Window.Maximize();
 
-Thread.Sleep(5000);
+Thread.Sleep(8000);
 
 try
 {
@@ -39,5 +39,4 @@ catch (Exception)
 {
     Console.WriteLine("Wrong URL");
     driver.Quit();
-    //throw;
 }
