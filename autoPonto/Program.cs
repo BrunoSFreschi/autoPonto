@@ -34,6 +34,10 @@ try
         var send = driver.FindElementByXPath($"//span[@data-testid='send']");
         send.Click();
     }
+    
+    Console.WriteLine("Sucsses!");
+    
+    driver.Quit();
 }
 catch (Exception)
 {
